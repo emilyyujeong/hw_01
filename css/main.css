@@ -8,6 +8,11 @@
     background: #fff;
 }
 
+#header img {
+    width: 70%;
+
+}
+
 #header .inner {
     display: flex;
     position: relative;
@@ -63,7 +68,7 @@
 
 .mainVisual .mainSlide figure {
     position: relative;
-    margin: 10px auto;
+    margin: 0 auto;
     height: 500px;
 }
 
@@ -190,6 +195,11 @@
     line-height: 25px;
 }
 
+
+
+
+/* content 시작......................................... */
+
 .mainContent {
     padding: 100px 0;
     background: #fff;
@@ -221,24 +231,28 @@
 .mainContent .inner figure {
     flex: 1;
     text-align: center;
+
 }
 
 .mainContent figure img {
     width: 350px;
     height: 200px;
+
 }
 
 .mainContent .img_box {
     position: relative;
     margin: 0 0 20px 0;
-    overflow: hidden;
+
+    transition: 0.3s;
 }
+
 
 
 .mainEvent {
 
     padding: 100px 0;
-    background: #ddd;
+    background: #f2f2f2;
 }
 
 .mainEvent .inner {
@@ -262,6 +276,7 @@
 .mainEvent .inner h2 {
     font-size: 40px;
     font-weight: 700;
+    color: #333;
     margin: 30px auto;
     text-align: center;
 
@@ -273,6 +288,8 @@
     font-weight: 300;
     margin: 30px auto;
     text-align: center;
+    line-height: 28px;
+
 }
 
 .mainEvent .inner a {
@@ -305,18 +322,21 @@
     padding: 100px 0;
     text-align: center;
     background: #fff;
+
 }
 
 .mainProduct h2 {
     font-size: 25px;
     font-weight: 700;
     margin: 0 0 10px 0;
+    color: #333;
 }
 
 .mainProduct p {
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 30px 0;
+    color: #333;
 }
 
 .mainProduct img {
@@ -353,7 +373,10 @@
 }
 
 .mainProduct .inner .img_box:hover span {
+    border: 2px solid #fff;
+    border-bottom: ;
     opacity: 1;
+
 }
 
 
@@ -421,7 +444,7 @@
 /* footer 시작............................................. */
 
 .footer {
-    background: #ddd;
+    background: #f2f2f2;
     padding: 0 0 50px 0;
 }
 
@@ -474,10 +497,12 @@
 .footer .bottom {
     padding: 40px 0 0 0;
     line-height: 20px;
+    color: #333;
 }
 
 .footer .bottom .inner>strong {
     font-size: 50px;
     font-weight: 500;
+    color: rgb(87, 87, 87);
     line-height: 70px;
 }
