@@ -1,0 +1,493 @@
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    line-height: 100px;
+    background: #fff;
+}
+
+#header .inner {
+    display: flex;
+    position: relative;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 70px;
+    margin: 0 100px;
+}
+
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li .smenu {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    line-height: 40px;
+    background: #fff;
+    color: #333;
+    border: 3px solid #ddd;
+    text-align: center;
+    transform: translate(-50%, 0);
+    width: 150px;
+    z-index: 999;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#header .gnb>ul>li:hover .smenu {
+    top: 80%;
+    opacity: 1;
+    visibility: visible;
+}
+
+#header .gnb>ul>li .smenu li~li {
+    border-top: 1px solid #ddd;
+}
+
+#header .right {
+    position: relative;
+    margin: 0 0 0 auto;
+}
+
+#header .right i {
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    margin: 10px auto;
+    height: 500px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/mainslide02.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/mainslide02.jpg)no-repeat center center/cover;
+
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/mainslide03.jpg)no-repeat center center/cover;
+
+}
+
+.mainVisual .mainSlide .itm04 {
+    background: url(../img/mainslide04.jpg)no-repeat center center/cover;
+
+}
+
+.mainVisual .mainSlide .itm05 {
+    background: url(../img/mainslide05.jpg)no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: none;
+    border: none;
+    font-size: 0;
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -800px;
+}
+
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 800px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    margin: -50px 10px;
+    border-radius: 50%;
+
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #333;
+    border-radius: 50%;
+}
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+.mainVisual .mainSlide h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 0 900px;
+    text-shadow: 0 0 3px #000;
+    color: #fff;
+    text-align: right;
+}
+
+.mainVisual .mainSlide p {
+    color: #fff;
+    margin: 15px 0 0 900px;
+    text-align: right;
+}
+
+.mainVisual .mainSlide .inner a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0 0 1100px;
+    outline: 1px solid #ebb625;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+.mainVisual .mainSlide .inner a:hover {
+    background: #ebb625;
+    outline: 1px solid #ebb625;
+    transition: 0.3s;
+}
+
+
+
+.mainVisual .inner p {
+    font-size: 15px;
+    font-weight: 300px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.mainContent {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.mainContent h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.mainContent p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    text-align: center;
+    line-height: 1;
+}
+
+.mainContent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.mainContent .inner figure {
+    flex: 1;
+    text-align: center;
+}
+
+.mainContent figure img {
+    width: 350px;
+    height: 200px;
+}
+
+.mainContent .img_box {
+    position: relative;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+}
+
+
+.mainBanner {
+    padding: 100px 0;
+    text-align: center;
+    background: url(../img/bannerwebp.webp)no-repeat fixed center center/cover;
+}
+
+.mainBanner h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+
+.mainBanner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    color: #fff;
+}
+
+.mainBanner a {
+    display: inline-block;
+    outline: 1px solid #ebb625;
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.mainBanner a:hover {
+    background: #ebb625;
+    outline: 1px solid #ebb625;
+    transition: 0.3s;
+
+}
+
+
+
+
+.mainEvent {
+    padding: 100px 0;
+    background: #ddd;
+}
+
+.mainEvent .inner {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainEvent .inner h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+.mainEvent .inner p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 15px auto;
+    text-align: center;
+}
+
+
+
+
+.mainEvent .inner a {
+    display: inline-block;
+    padding: 20px 30px;
+    outline: 1px solid #ebb625;
+    margin: 50px 150px;
+    color: #333;
+
+}
+
+
+.mainEvent .inner a:hover {
+    background: #ebb625;
+    outline: 1px solid #ebb625;
+    transition: 0.3s;
+}
+
+
+
+/* mainProduct 시작........................ */
+
+.mainProduct {
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    background: #fff;
+}
+
+.mainProduct h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.mainProduct p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+}
+
+.mainProduct img {
+    width: 100%;
+    height: 250px;
+}
+
+.mainProduct figure {
+    padding: 30px 15px 20px 15px;
+}
+
+
+.mainProduct .img_box {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    filter: brightness(1);
+    transition: 0.7s;
+}
+
+
+.mainProduct .inner .img_box figcaption{
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    color: #fff; 
+    text-align: center;
+    line-height: 250px;
+    opacity: 0; 
+  }
+  
+  .mainProduct .inner .img_box:hover figcaption{
+    opacity: 1;
+  }
+
+.mainProduct .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mainProduct .arrows a {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+}
+
+
+
+.mainProduct .arrows .prev {
+    background: url(../img/prev.png);
+    margin: 0 0 0 -700px;
+}
+
+.mainProduct .arrows .next {
+    background: url(../img/next.png);
+    margin: 0 0 0 700px;
+}
+
+.mainProduct .img_box {
+    margin: 0 0 15px 0;
+}
+
+.bar {
+    position: relative;
+    top: 50%;
+    left: 25%;
+    width: 1000px;
+    height: 10px;
+    background: #333;
+}
+
+.bar span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: #ebb625;
+    transition: left .5s;
+}
+
+.footer {
+    background: #ddd;
+    padding: 0 0 50px 0;
+}
+
+.footer .top {
+    line-height: 80px;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.footer .inner {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .top .left li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.footer .top .left li~li::before {
+    content: "";
+    margin: 0 20px;
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: 11px;
+    background: #a3a3a3;
+}
+
+.footer .top .right {
+    display: flex;
+    gap: 5px;
+}
+
+.footer .top .right>strong {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer .top .right i {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.footer .bottom {
+    padding: 40px 0 0 0;
+    line-height: 20px;
+}
+
+.footer .bottom .inner>strong {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 70px;
+}
